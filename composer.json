@@ -1,0 +1,52 @@
+{
+    "name": "solitweb/laravel-dashboard-date-time-tile",
+    "description": "A date & time tile for the Laravel Dashboard",
+    "keywords": [
+        "solitweb",
+        "laravel-dashboard-date-time-tile"
+    ],
+    "homepage": "https://github.com/solitweb/laravel-dashboard-date-time-tile",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Stijn Vanouplines",
+            "email": "stijn@solitweb.be",
+            "homepage": "https://solitweb.be",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4",
+        "spatie/laravel-dashboard": "^2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Solitweb\\DateTimeTile\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Solitweb\\DateTimeTile\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage",
+        "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Solitweb\\DateTimeTile\\DateTimeTileServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
