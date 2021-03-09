@@ -30,6 +30,12 @@ In your dashboard view you use the `livewire:date-time-tile` component.
 </x-dashboard>
 ```
 
+By default, the title of the tile will display the timezone string, i.e. Europe/Brussels. This can be overidden using the optional `title` parameter, e.g.
+
+```html
+<livewire:date-time-tile position="a1" timezone="Europe/London" title="Greenwich Mean Time" />
+```
+
 ### Customizing the view
 
 If you want to customize the view used to render this tile, run this command:
