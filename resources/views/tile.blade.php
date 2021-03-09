@@ -6,7 +6,7 @@
 <x-dashboard-tile :position="$position">
     <div class="grid gap-2 justify-items-center h-full text-center">
         <div class="font-medium text-dimmed text-sm uppercase tracking-wide tabular-nums">
-            {{ str_replace('_', ' ', $timezone) }}
+            {{ $title ?? str_replace('_', ' ', $timezone) }}
         </div>
         <div id="{{ $time }}" class="self-center font-bold text-4xl tracking-wide leading-none">
             {{ Carbon\Carbon::now($timezone)->format('H:i:s') }}
