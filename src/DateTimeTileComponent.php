@@ -10,11 +10,15 @@ class DateTimeTileComponent extends Component
 
     public $timezone;
 
-    public function mount(string $position, ?string $timezone)
+    public $title;
+
+    public function mount(string $position, ?string $timezone, ?string $title)
     {
         $this->position = $position;
 
         $this->timezone = $timezone ?? config('app.timezone');
+
+        $this->title = $title ?? null;
     }
 
     public function render()
