@@ -12,7 +12,7 @@ class DateTimeTileComponent extends Component
 
     public $title;
 
-    public function mount(string $position, ?string $timezone, ?string $title)
+    public function mount(string $position, ?string $timezone = null, ?string $title = null)
     {
         $this->position = $position;
 
